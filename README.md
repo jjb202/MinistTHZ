@@ -1,2 +1,2 @@
 # MinistTHZ
-MinistTHZ Dataset
+MinistTHZ Dataset will public soon!
