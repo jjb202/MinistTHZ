@@ -15,4 +15,4 @@ we also relese the code of the Unet/esrgan/transformer for the abution study.
 
 Please contact us in the future regarding the use of private datasets.
 
-In the future we will further develop our experimental section and the datasets in this responds.
+In the future we will further develop our experimental section and the datasets in this repositorie.
