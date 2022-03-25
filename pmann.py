@@ -10,13 +10,13 @@ import cv2
 import random
 import time
 import os
-from blocks import ORSNet
+from blocks import DFM
 from blocks import _NonLocalBlockND
 from blocks import ECAAttention
 from blocks import SAM
 from resnet_cbam import BasicBlock
 
-class PReNet(nn.Module):
+class PMANN(nn.Module):
     def __init__(self, recurrent_iter=6):
         super(PReNet, self).__init__()
         self.iteration = recurrent_iter
@@ -24,7 +24,7 @@ class PReNet(nn.Module):
         # self.att2 = BasicBlock(64, 64)
         # self.sam = SAM(1, kernel_size=1, bias=False)
         act = nn.PReLU()
-        self.orsnet = ORSNet(32, 32, 28, 4, act, False, 20, 12)
+        self.orsnet = DFM(32, 32, 28, 4, act, False, 20, 12)
         self.conv0 = nn.Sequential(
             nn.Conv2d(2, 32, 3, 1, 1),
             nn.ReLU()
